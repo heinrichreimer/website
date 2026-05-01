@@ -106,7 +106,7 @@ jobs:
       - name: 🗜️ Create public pages archive
         run: zip -r public.zip public/
       - name: 🚀 Create GitHub release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           name: Release ${{ steps.get-version.outputs.tag }}
           draft: false
